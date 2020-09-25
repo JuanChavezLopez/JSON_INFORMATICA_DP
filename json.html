@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSOON TUTORIAL</title>
+
+    <script type="text/javascript">
+       // JSON.parse()-  STRING json CONVERT TO OBJECT JAVASCRIPT
+        var cadena = '{"nombre": "juan","apellido": "chavez","edad": 34, "pais": "Peru"}';
+        var objetoJS= JSON.parse(cadena);
+
+        console.log(objetoJS.nombre);
+        console.log(objetoJS.apellido);
+        console.log(objetoJS.edad);
+        console.log(objetoJS.pais);
+
+
+       // JSON.stringify()-  converto object javascript to JSON string
+        var cadena = {nombre:"juan",apellido:"chavez",edad:34,pais:"Peru"};
+        var miJSON= JSON.stringify(cadena);
+        var jsonSTRING = JSON.parse(miJSON);
+        // console.log(miJSON);
+
+        console.log(jsonSTRING.nombre);
+        console.log(jsonSTRING.apellido);
+        console.log(jsonSTRING.edad);
+        console.log(jsonSTRING.pais);
+
+        // CONVERT UN ARRAY JAVASCRIPT A JSON STRING
+        var arreglo = ["Lunes", "Martes", "Miercoles","Jueves","Viernes","Sabado","Domingo"];
+        var arrayJSON = JSON.stringify(arreglo);
+        console.log(arrayJSON);
+
+    </script>
+</head>
+<body>
+    <h1>TUTORIAL DE JSON</h1>
+    
+</body>
+</html>

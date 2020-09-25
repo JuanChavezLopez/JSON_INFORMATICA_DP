@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSOON TUTORIAL</title>
+
+    <script type="text/javascript">
+    //  1. STRING
+        console.log("STRING");
+        var cadena = "{'nombre' : 'juan'}";
+        console.log(cadena);
+
+    //  2 . NUMEROS
+        console.log("NUMEROS");
+        var numeros = {"edad" : 34};
+        console.log(numeros.edad);
+
+    //  3- OBJETOS JSON
+         console.log("OBJETOS JSON");
+        var empleados = {"nombre" : "juan", "apellido":"chavez"};
+        console.log(empleados.apellido);
+
+    //  4- ARRAY
+    //  4.1- ARRAY SIMPLE
+        console.log("ARRAY SIMPLE");
+        var arraySimple =["lunes", "martes","miercoles","jueves","viernes","sabado", "domingo"];
+        console.log(arraySimple[0]);
+
+    //  4.1- ARRAY OBJETOS
+        console.log("ARRAY DE OBJETOS");
+        var arrayObjetos =[
+            {"Nombre":"Juan", "Apellido":"Chavez","Edad":34},
+            {"Nombre":"Pedro", "Apellido":"Bustamante","Edad":34}
+        ];
+        console.log(arrayObjetos[0].Apellido);
+
+    //  5- VALORES COMO TRUE, FALSE, NULL
+        console.log("TRUE FALSE");
+        var var_true = true;
+        console.log(var_true);
+
+    //  6- COMBINACION O ANIDACION DE LAS ANTERIORES
+        console.log("COMBINACION O ANIDACION DE LAS ANTERIORES");
+        var objetoComplejo ={
+            "nombre":"pedro",
+            "edad": 34,
+            "booleam": true,
+            "educaHijos": [10,12,45],
+            "educacion": {
+                "primaria": "Escuela Belgrano",
+                "secundaria": "colegio nacional",
+                "universidad": [ "abogacia", "medicina"]
+            },
+            "valor" : null
+        };  
+
+        console.log(objetoComplejo.edad);
+        console.log(objetoComplejo.educacion.universidad[1]);
+
+
+    </script>
+</head>
+<body>
+    <h1>TIPOS DE DATOS JSON</h1>
+    
+</body>
+</html>
