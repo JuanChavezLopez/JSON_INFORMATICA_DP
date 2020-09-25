@@ -50,13 +50,20 @@
             "educacion": {
                 "primaria": "Escuela Belgrano",
                 "secundaria": "colegio nacional",
-                "universidad": [ "abogacia", "medicina"]
+                "universidad": [ "abogacia", "medicina"],
+                "doctorado":{
+                    "universidad":{
+                        "nombre": "Universidad de rumania",
+                        "team":["RARES","DRAGOS","ANDREI"]
+                    }
+                }
             },
             "valor" : null
         };  
 
         console.log(objetoComplejo.edad);
-        console.log(objetoComplejo.educacion.universidad[1]);
+        console.log(objetoComplejo.educaHijos);
+        console.log(objetoComplejo.educacion.doctorado.universidad.team);
 
 
     </script>
