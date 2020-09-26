@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSOON TUTORIAL</title>
+    <title>TIPOS DE DATOS JSON</title>
 
     <script type="text/javascript">
     //  1. STRING
@@ -61,9 +61,38 @@
             "valor" : null
         };  
 
+
         console.log(objetoComplejo.edad);
         console.log(objetoComplejo.educaHijos);
-        console.log(objetoComplejo.educacion.doctorado.universidad.team);
+        console.log(objetoComplejo.educacion.doctorado.universidad.team[0]);
+
+        // 7*-  COMBINACION O ANIDACION DE LAS ANTERIORES
+
+        console.log("REPETICION DE LA CLASE ANTERIOR");
+
+        var objectComplejo =  {
+            "vida" : {
+                "peru": {
+                    "universidad": {
+                        "companieros":{
+                            "cantidad": 100
+                        }
+                    }
+                },
+                "rumania":{
+                    "universidad":{
+                        "companieros":{
+                            "cantidad": 50,
+                            "cursos":["matematica","lenguaje","civil","aritmetica"]
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(objectComplejo.vida.rumania.universidad.companieros.cursos);
+
+       
 
 
     </script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <script type="text/javascript">
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                console.log("Valor de la propiedad readyState: "+ xhttp.readyState);
+                console.log("Valor de la propiedad status: "+ xhttp.status);
+                console.log("Valor de la propiedad resposeText: "+ xhttp.responseText);
+
+                // CONVERTIMOS A UN OBJETO JAVASCRIPT
+                 var objetoJS = JSON.parse(xhttp.responseText);
+                 console.log(objetoJS);
+                //  ACCEDIENDO A EL OBJETO JAVASCRIPT
+                 console.log(objetoJS.nombre);
+
+
+            }
+        };
+
+        xhttp.open("GET", "datos_json.txt", true );
+        // SEND()-- ENVIA LA PETICION AL SERVIDOR
+        xhttp.send();
+
+
+
+
+    </script>
+</head>
+<body>
+    <H1>CURSO AJAX</H1>
+    
+</body>
+</html>

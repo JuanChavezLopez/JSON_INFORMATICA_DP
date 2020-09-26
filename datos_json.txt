@@ -1,0 +1,12 @@
+
+{
+    "nombre": "Juan",
+    "apellido": "Chavez",
+    "edad": 34,
+    "veghiculos":[
+        {"tipo":"auto", "marca":"ford"},
+        {"tipo":"moto", "marca":"Honda"},
+        {"tipo":"camion", "marca":"Mercedes Benz"}
+    ],
+    "pais": "Rumania"
+}
