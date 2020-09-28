@@ -26,7 +26,7 @@ $(document).ready(function(){
                 var strjson = JSON.stringify(data);
                 var jsonparse = JSON.parse(strjson);
                 console.log(strjson);
-                console.log(jsonparse);
+                console.log(jsonparse[0].nombre);
 
             }
         })
